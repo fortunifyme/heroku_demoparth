@@ -38,9 +38,9 @@
     <!-- todo h make " dataSet name " header of the table "dataset_id" the same or delete it  -->
   </table>
   <br>
-  <form action="Logout" method="post">
-    <input type="submit" value="Logout">
-  </form>
+
+    <input type="button" value="Logout (modified)" onclick="window.location.href='/logout'">
+
 
   <form action="search.jsp" method="get">
     <input type="submit" value="search">

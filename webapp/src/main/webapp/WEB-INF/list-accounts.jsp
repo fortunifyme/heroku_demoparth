@@ -90,7 +90,7 @@
 
 
 <form action="other-jsp/home.jsp">
-  <input type="submit" value="back home">
+  <input type="submit" value="back home (huh?)">
 </form>
 
 
