@@ -1,4 +1,9 @@
 out/
-**/target
 .idea/
 **/*.iml
+common/target/
+config/target/
+controller/target/
+dao/target/
+model/target/
+service/target/
