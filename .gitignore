@@ -7,4 +7,4 @@ controller/target/
 dao/target/
 model/target/
 service/target/
-web/target/webapp-0.0.1-SNAPSHOT/
+webapp/target/webapp-0.0.1-SNAPSHOT/

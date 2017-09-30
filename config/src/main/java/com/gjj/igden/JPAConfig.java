@@ -1,5 +1,6 @@
 package com.gjj.igden;
 
+import org.apache.commons.lang3.StringUtils;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.context.annotation.Bean;
@@ -54,7 +55,7 @@ public class JPAConfig {
         datasource.setDriverClassName(env.getProperty(DRIVER_CLASS_NAME));
         datasource.setUrl(env.getProperty(DATABASE_URL));
         datasource.setUsername(env.getProperty(USERNAME));
-        datasource.setPassword(env.getProperty(PASSWORD));
+        datasource.setPassword(env.getProperty(PASSWORD, StringUtils.EMPTY));
         return datasource;
     }
 
@@ -84,8 +85,8 @@ public class JPAConfig {
 
     Properties additionalProperties() {
         Properties properties = new Properties();
-        properties.setProperty("hibernate.hbm2ddl.auto", env.getProperty(HIBERNATE_AUTO_MODE));
-        properties.setProperty("hibernate.dialect", env.getProperty(HIBERNATE_DIALECT));
+        properties.setProperty("hibernate.hbm2ddl.auto", env.getProperty(HIBERNATE_AUTO_MODE, "update"));
+        properties.setProperty("hibernate.dialect", env.getProperty(HIBERNATE_DIALECT, "org.hibernate.dialect.MySQL5Dialect"));
         return properties;
     }
 
