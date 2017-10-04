@@ -15,7 +15,7 @@ The setting are provided in config.properties (overrideable in the environment v
 * hibernate.hbm2ddl.auto=update
 * hibernate.dialect=org.hibernate.dialect.MySQL5Dialect
 * jndi.url=java:comp/env/jdbc/ya_web_app_db
-* 1use.jndi=true
+* use.jndi=true
 
 ## Server Options
 1. I have included webapp-runner in the application as it provides an easy way to specify Tomcat as a dependency of your app and launch 
